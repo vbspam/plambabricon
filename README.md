@@ -18,6 +18,13 @@ The project is split into three components: a background daemon, a lightweight s
 
 ---
 
+## 💝 Donation
+
+If you like it, consider sharing a few sats!
+
+![Donate](donate-plambaricon.svg)
+
+
 ## 📂 Project Structure
 
 ```text
