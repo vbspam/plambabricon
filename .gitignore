@@ -1,0 +1,29 @@
+# --- Python leftovers ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+plambabricon.egg-info/
+
+# --- Build and packaging artifacts ---
+build/
+dist/
+*.deb
+*.AppImage
+*.tar.gz
+*.zip
+*.7z
+squashfs-root/
+
+# --- IDE and system files ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store

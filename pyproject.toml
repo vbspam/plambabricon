@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plambabricon"
+version = "1.0.0"
+description = "Plasma Ambient Based Brightness Control"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = [
+    "dbus-next>=0.2.3",
+    "PyQt6>=6.4.0",
+]
+
+[tool.setuptools]
+py-modules = ["plambabricond", "plambabricongui", "plambabricontray"]
+
+[project.scripts]
+plambabricond = "plambabricond:main_entry"
+plambabricongui = "plambabricongui:main"
+plambabricontray = "plambabricontray:main"
