@@ -5,7 +5,7 @@ set -e
 
 # --- CONFIGURATION ---
 PACKAGE_NAME="plambabricon"
-VERSION="1.0.0"
+VERSION="0.0.1"
 ARCH="all"
 
 MAINTAINER="vbspam <vbspam@centrum.cz>"
