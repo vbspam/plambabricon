@@ -1,21 +1,14 @@
 # Plambabricon 🌟
 > **Pl**asma **Am**bient **Ba**sed **Bri**ghtness **Con**trol
 
-`plambabricon` is a lightweight ambient light brightness controller designed for **KDE Plasma**. It automatically adjusts your laptop's display brightness based on your hardware ambient light sensor.
+`plambabricon` It automatically adjusts your laptop's display brightness based on your hardware ambient light sensor. Designed for **KDE Plasma**. 
 
-The project is split into three components: a background daemon, a lightweight system tray applet, and a configuration GUI.
+Latest release [plambabricon_0.0.1_all.deb](https://github.com/vbspam/plambabricon/releases/download/v0.0.1/plambabricon_0.0.1_all.deb) (install with `apt install ./plambabricon_0.0.1_all.deb` which will resolve all python dependencies by using standard Debian 13 packages)
 
----
-
-## 🛠 Features
-- **Daemon on Autopilot:** Runs asynchronously in the background, listening to the ambient light sensor.
-- **Lightweight System Tray:** Sits quietly in your system tray, allowing you to temporarily inhibit automatic regulation or launch settings with a single click.
-- **Logarithmic Scaling:** Matches how the human eye naturally perceives brightness changes.
-- **Native Hardware Scaling:** Queries `brightnessMin` and `brightnessMax` from KDE D-Bus, seamlessly supporting devices with non-standard hardware ranges (e.g., 0-255 vs 0-10000).
-- **Smooth Transitions (Hysteresis):** Prevents screen flickering due to tiny, rapid light fluctuations.
-- **Modern Config GUI:** Native PyQt6 interface to adjust limits and sensitivity on the fly.
-- **Proper XDG Standards:** Keeps your system clean by storing configuration in `~/.config/plambabricon/config.json`.
-
+## 🛠 Components
+- background daemon `plambabricond` runs on the background and does the work,
+- system tray applet  `plambabricontray` sits quietly in your system tray, allowing you to temporarily inhibit automatic regulation or launch settings with a single click
+- configuration GUI `plambabricongui` native PyQt6 interface to adjust limits and sensitivity on the fly.
 ---
 
 ## 💝 Donation
